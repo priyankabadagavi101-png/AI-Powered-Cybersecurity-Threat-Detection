@@ -1,54 +1,74 @@
-# AI-Powered Cybersecurity Threat Detection System
+# AI-Powered Cybersecurity Threat Detection
 
-## Overview
-This project builds a machine learning-based Intrusion Detection System (IDS) that analyzes network traffic and detects potential cyber attacks.  
-The system uses the **KDD Cup 1999 dataset** and a **Random Forest classifier** to classify network traffic into normal or malicious categories.
-
-The goal of this project is to demonstrate how AI can be used for **cybersecurity threat detection**.
-
----
+Machine learning system that detects network intrusions using the KDD Cup 1999 dataset.
 
 ## Features
 
-- Network traffic analysis
-- Machine learning attack classification
-- Attack distribution visualization
-- Confusion matrix evaluation
-- Saved trained model
-- Prediction of new network traffic samples
+* Detects malicious network traffic
+* Random Forest ML model
+* Data preprocessing pipeline
+* Attack distribution visualization
+* Confusion matrix evaluation
 
----
+## Tech Stack
 
-## Technologies Used
-
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib
-- Seaborn
-- Joblib
-
----
+* Python
+* Scikit-learn
+* Pandas
+* Matplotlib
+* Seaborn
 
 ## Dataset
 
-This project uses the **KDD Cup 1999 Intrusion Detection Dataset**.
+KDD Cup 1999 Intrusion Detection Dataset
 
-The dataset contains:
+Dataset not included due to size.
 
-- 494,021 network traffic records
-- 41 network features
-- Multiple cyber attack types
-
-Examples of attacks:
-
-- smurf
-- neptune
-- land
-- back
-- satan
-
----
+Download here:
+https://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html
 
 ## Project Structure
+
+src/
+data_loader.py
+preprocessing.py
+model.py
+detect.py
+visualizer.py
+
+main.py
+predict.py
+
+## Run the Project
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+Train model:
+
+python main.py
+
+Run prediction:
+
+python predict.py
+
+## Results
+
+### Attack Distribution
+
+![Attack Distribution](assets/attack_distribution.png)
+
+### Confusion Matrix
+
+![Confusion Matrix](assets/confusion_matrix.png)
+
+### Example Output
+
+![Example Output](assets/output_example.png)
+
+Detected Traffic Type: land
+
+## Author
+
+Priyanka Badagavi
